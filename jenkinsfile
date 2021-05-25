@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        stage('Deploy to QA Server') {
+            steps {
+                echo 'Copy the file'
+            }
+        }
+        stage('Testing') {
+            steps {
+                echo 'Run test cases '
+            }
+        }
+    }
+}
